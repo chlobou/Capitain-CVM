@@ -11,6 +11,7 @@ public class PlayerData
     /// <summary>
     /// Niveau sélectionné par l'utilisateur pour le vol. général
     /// </summary>
+
     [Range(-80, 0)]
     private float _volumeGeneral = 0;
     public float VolumeGeneral { get { return _volumeGeneral; } set { _volumeGeneral = value; } }
@@ -64,6 +65,10 @@ public class PlayerData
     /// </summary>
     public System.Action Gameover;
 
+    public int maxLevelReached;
+
+    public List<string> collectables;
+
     public int Energie { get { return this._energie; } }
     public int Vie { get { return this._vie; } }
     public int Score { get { return this._score; } }
@@ -81,12 +86,18 @@ public class PlayerData
         this.UIPerteVie = null;
         this.Gameover = null;
         this._chestOpenList = new List<string>();
+        this.maxLevelReached = 1;
+        this.collectables = null;
+        //AjouterCoffreOuvert niveau
+        //ajouter collectable
+
     }
+
 
     public PlayerData(int vie = 1, int energie = 2, int score = 0,
         float volumeGeneral = 0, float volumeMusique = 0, float volumeEffet = 0,
         System.Action uiPerteEnergie = null, System.Action uiPerteVie = null,
-        System.Action gameOver = null, List<string> ChestList = null)
+        System.Action gameOver = null, List<string> ChestList = null, int maxLevelReached = 1, List<string> collectables = null)
     {
         this._vie = vie;
         this._energie = energie;
@@ -98,8 +109,12 @@ public class PlayerData
         this.UIPerteVie += uiPerteVie;
         this.Gameover += gameOver;
         this._chestOpenList = new List<string>();
+        this.maxLevelReached = maxLevelReached;
+        this.collectables = collectables;
         if (ChestList != null)
             this._chestOpenList = ChestList;
+        if (collectables != null)
+            this.collectables = collectables;
     }
 
     /// <summary>
@@ -185,5 +200,14 @@ public class PlayerData
     public bool AvoirOuvertureCoffre(string nom)
     {
         return this._chestOpenList.Contains(nom);
+    }
+
+    public void AjouterNiveau()
+    {
+        this.maxLevelReached += 1;
+    }
+    public void AjouterCollectable(string collectable)
+    {
+        this.collectables.Add(collectable);
     }
 }
