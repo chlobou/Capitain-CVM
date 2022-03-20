@@ -7,7 +7,7 @@ using UnityEngine;
 public static class PlayerDataJson
 {
     [System.Serializable]
-    class PlayerDataToJson
+    class PlayerDataToJson //Classe travaillée en équipe avec Quentin
     {
         public int vie;
         public int energie;

@@ -2,29 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Collectables : MonoBehaviour
 {
-
-    public string collectableName;
+    public string collectable;
 
     // Start is called before the first frame update
     void Start()
     {
-
-        if (collectableName != null)
+        //GameManager.Instance.PlayerData.collectables = new List<string>();
+        if (collectable != null)
         {
-            foreach (string collectable in GameManager.Instance.PlayerData.collectables)
+            foreach (string element in GameManager.Instance.PlayerData.collectables)
             {
-                if (collectable == collectableName)
+            
+                if (element == collectable)
                 {
-                    Destroy(gameObject);
+                    Destroy(this.gameObject);
                 }
+                Debug.Log(element);
             }
+
         }
-        else
-        {
-            collectableName = gameObject.name;
-        }
+
     }
 
     // Update is called once per frame
@@ -37,7 +37,7 @@ public class Collectables : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Player"))
         {
-            GameManager.Instance.PlayerData.AjouterCollectable(collectableName);
+            GameManager.Instance.PlayerData.AjouterCollectable(collectable);
             Destroy(gameObject);
         }
     }

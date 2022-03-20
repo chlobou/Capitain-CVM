@@ -83,14 +83,12 @@ public class PlayerData
         this._volumeMusique = 0;
         this._volumeEffet = 0;
         this.UIPerteEnergie = null;
+
         this.UIPerteVie = null;
         this.Gameover = null;
         this._chestOpenList = new List<string>();
         this.maxLevelReached = 1;
         this.collectables = null;
-        //AjouterCoffreOuvert niveau
-        //ajouter collectable
-
     }
 
 
@@ -206,6 +204,7 @@ public class PlayerData
     {
         this.maxLevelReached += 1;
     }
+
     public void AjouterCollectable(string collectable)
     {
         this.collectables.Add(collectable);
