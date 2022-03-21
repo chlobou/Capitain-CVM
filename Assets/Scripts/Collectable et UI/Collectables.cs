@@ -13,7 +13,6 @@ public class Collectables : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameManager.Instance.PlayerData.collectables = new List<string>();
         if (collectable != null)
         {
             foreach (string element in GameManager.Instance.PlayerData.collectables)

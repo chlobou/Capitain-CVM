@@ -6988,16 +6988,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741826
-  - first: {x: 53, y: 1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 6
-      m_TileSpriteIndex: 28
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 61, y: 1, z: 0}
     second:
       serializedVersion: 2
@@ -26782,7 +26772,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 13e0f75a2b656d34486053759fa4f14a, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: f9c352235a1f83c4bb304b909b5f7656, type: 2}
-  - m_RefCount: 2
+  - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 4bc0f5284bee8ae4f98ea2ab35e1805d, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 29
@@ -26862,14 +26852,13 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -3627854407871609761, guid: 2f73f902422c817448fe68860d8d99fa,
       type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -7783043263158481598, guid: 2f73f902422c817448fe68860d8d99fa,
-      type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -6411942188729546641, guid: 2f73f902422c817448fe68860d8d99fa,
       type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 2647
+  - m_RefCount: 2646
     m_Data:
       e00: 1
       e01: 0
@@ -26888,7 +26877,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 2647
+  - m_RefCount: 2646
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -28086,21 +28075,17 @@ CompositeCollider2D:
         Y: 5625000
       - X: 577500032
         Y: 10000000
-      - X: 540000000
+      - X: 540000100
         Y: 10000000
-      - X: 540000000
-        Y: 11250000
-      - X: 539374976
-        Y: 14375000
-      - X: 538124992
-        Y: 16250000
-      - X: 533124992
-        Y: 16250000
-      - X: 530624992
-        Y: 15000000
-      - X: 530624992
-        Y: 10625000
-      - X: 531249984
+      - X: 540000100
+        Y: 9999959
+      - X: 540000041
+        Y: 9999900
+      - X: 531249964
+        Y: 9999900
+      - X: 531249927
+        Y: 9999915
+      - X: 531249842
         Y: 10000000
       - X: 510000000
         Y: 10000000
@@ -28980,20 +28965,16 @@ CompositeCollider2D:
       - {x: 60, y: 0.6874973}
       - {x: 60.000008, y: -0.687508}
       - {x: 60.375008, y: -1}
+    - - {x: 118.99998, y: -12}
+      - {x: 118.99998, y: 2}
+      - {x: 117, y: 1.9999708}
+      - {x: 117.00003, y: -12}
     - - {x: 57.499992, y: -2}
       - {x: 57.812508, y: -1.8749934}
       - {x: 57.9375, y: -1.687497}
       - {x: 58, y: -1.4999958}
       - {x: 57.999992, y: 0.5625059}
       - {x: 57.749992, y: 1}
-      - {x: 54, y: 1.0000294}
-      - {x: 54, y: 1.1250023}
-      - {x: 53.9375, y: 1.4375042}
-      - {x: 53.81249, y: 1.625}
-      - {x: 53.312492, y: 1.6249974}
-      - {x: 53.0625, y: 1.4999834}
-      - {x: 53.062508, y: 1.0624924}
-      - {x: 53.124912, y: 1}
       - {x: 51, y: 1.0000294}
       - {x: 50.999996, y: 1.5625058}
       - {x: 50.749985, y: 2}
@@ -29004,10 +28985,6 @@ CompositeCollider2D:
       - {x: 51, y: -0.0000294}
       - {x: 51.00001, y: -1.687508}
       - {x: 51.37501, y: -2}
-    - - {x: 118.99998, y: -12}
-      - {x: 118.99998, y: 2}
-      - {x: 117, y: 1.9999708}
-      - {x: 117.00003, y: -12}
     - - {x: 77.49999, y: -4}
       - {x: 77.81251, y: -3.8749936}
       - {x: 77.9375, y: -3.687497}
@@ -29030,6 +29007,10 @@ CompositeCollider2D:
       - {x: 68, y: -2.3125029}
       - {x: 68.00001, y: -3.687508}
       - {x: 68.37501, y: -4}
+    - - {x: 113.999985, y: -2.999981}
+      - {x: 116.000015, y: -2.9999747}
+      - {x: 115.99998, y: -1.99999}
+      - {x: 113.999985, y: -2.0000253}
     - - {x: 98.5, y: -7.0000095}
       - {x: 98.812515, y: -6.875}
       - {x: 98.937515, y: -6.687501}
@@ -29048,10 +29029,6 @@ CompositeCollider2D:
       - {x: 88.999985, y: -5.0000296}
       - {x: 89.00001, y: -6.687508}
       - {x: 89.37501, y: -7}
-    - - {x: 113.999985, y: -2.999981}
-      - {x: 116.000015, y: -2.9999747}
-      - {x: 115.99998, y: -1.99999}
-      - {x: 113.999985, y: -2.0000253}
     - - {x: 111.999985, y: -3.999981}
       - {x: 114.000015, y: -3.9999747}
       - {x: 113.99998, y: -2.99999}
@@ -29512,6 +29489,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 53, y: 1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 2
+      m_TileSpriteIndex: 4
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: -6, y: 3, z: 0}
     second:
       serializedVersion: 2
@@ -29548,7 +29535,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: f9c352235a1f83c4bb304b909b5f7656, type: 2}
   - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: b04b2d5ada89b364fb00f2b84f168439, type: 2}
-  - m_RefCount: 1
+  - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 4bc0f5284bee8ae4f98ea2ab35e1805d, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
@@ -29563,11 +29550,11 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -793853672561180757, guid: 2f73f902422c817448fe68860d8d99fa,
       type: 3}
-  - m_RefCount: 1
+  - m_RefCount: 2
     m_Data: {fileID: -7783043263158481598, guid: 2f73f902422c817448fe68860d8d99fa,
       type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 7
+  - m_RefCount: 8
     m_Data:
       e00: 1
       e01: 0
@@ -29586,7 +29573,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 7
+  - m_RefCount: 8
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -30201,7 +30188,7 @@ PrefabInstance:
     - target: {fileID: 8825697746811437030, guid: 848fc5e9804caa541b89cfc389a4bbca,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 848fc5e9804caa541b89cfc389a4bbca, type: 3}
@@ -48236,6 +48223,7 @@ GameObject:
   - component: {fileID: 1130965009}
   - component: {fileID: 1130965008}
   - component: {fileID: 1130965011}
+  - component: {fileID: 1130965012}
   m_Layer: 0
   m_Name: diamond
   m_TagString: Untagged
@@ -48345,7 +48333,104 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8025ba05baf5444cbb93a7015ecbadd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectable: 
+  collectable: diamond
+  _clip: {fileID: 8300000, guid: d702d3fbd242cf34eabf3fc9fcc7bcc7, type: 3}
+--- !u!82 &1130965012
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130965007}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1202273556
 PrefabInstance:
   m_ObjectHideFlags: 0
