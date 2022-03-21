@@ -14,6 +14,7 @@ public class EnergyUpgrade : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Destroy(this.gameObject);
         if (collision.gameObject.tag.Equals("Player"))
         {
             GameManager.Instance.AudioManager

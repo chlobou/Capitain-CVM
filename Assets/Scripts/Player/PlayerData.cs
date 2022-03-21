@@ -137,7 +137,9 @@ public class PlayerData
         this._vie--;
         this.UIPerteVie();
         if (this._vie <= 0)
+        {
             this.Gameover();
+        }
         else
         {
             this.IncrEnergie(MAX_ENERGIE);
